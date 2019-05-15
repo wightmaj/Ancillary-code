@@ -39,8 +39,8 @@ f = plt.imshow(masked_array,interpolation='nearest',cmap='RdYlBu_r',origin='lowe
 plt.minorticks_on()
 plt.tick_params(length=10, width=1, which='major')
 plt.tick_params(length=5, width=1, which='minor')
-plt.xlabel(r"X-offset $('')$",fontsize=24)
-plt.ylabel(r"Y-offset $('')$",fontsize=24)
+plt.xlabel(r"spaxels",fontsize=24) # this should read spaxels, not arcseconds 
+plt.ylabel(r"spaxels",fontsize=24) # 
 
 #plot the colour bar
 cbar = plt.colorbar(f,fraction=0.15,shrink=0.9)
